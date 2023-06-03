@@ -1,4 +1,4 @@
 import "./style.css";
-import { getUserInput } from "./input";
+import { getLocationInput } from "./input";
 
-getUserInput();
+getLocationInput();

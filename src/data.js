@@ -11,7 +11,6 @@ export async function getWeatherData(location) {
     console.error(error);
   }
 
-  console.log(weatherData);
   const weather = processWeatherData(weatherData);
   return weather;
 }

@@ -2,7 +2,8 @@
   --header-background-color: blue;
 }
 
-body {
+body,
+p {
   margin: 0;
 }
 
@@ -21,4 +22,58 @@ input[type="search"] {
   border-radius: 2rem;
   font-size: 2rem;
   padding-left: 2rem;
+}
+
+div.location {
+  margin-left: 6rem;
+  font-size: 2rem;
+}
+
+div.weather,
+div.temperature {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+div.info {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+div.temperature {
+  grid-template-columns: 3fr 1fr 1fr;
+  justify-items: end;
+  align-items: center;
+}
+
+img.icon {
+  width: 30rem;
+  height: 30rem;
+}
+
+p.value {
+  font-size: 10rem;
+}
+
+.celsius,
+.fahrenheit {
+  width: 30%;
+  align-self: start;
+}
+
+.celsius {
+  justify-self: center;
+}
+
+.fahrenheit {
+  justify-self: start;
+}
+
+p.precipitation,
+p.humidity,
+p.wind-speed {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 15rem;
 }

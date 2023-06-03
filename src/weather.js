@@ -8,9 +8,9 @@ export class Weather {
 
   getTemperature(unit) {
     if (unit === "C") {
-      return this.temperatureCelsius;
+      return this.temperature.celsius;
     } else if (unit === "F") {
-      return this.temperatureFahrenheit;
+      return this.temperature.fahrenheit;
     } else {
       throw new Error("Invalid temperature unit given to getTemperature");
     }
