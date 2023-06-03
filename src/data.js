@@ -4,7 +4,7 @@ export async function getWeatherData(location) {
   let weatherData;
   try {
     const request = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=4a149ed226274f929e2153700230106&q=${location}`
+      `https://api.weatherapi.com/v1/current.json?key=4a149ed226274f929e2153700230106&q=${location}`
     );
     weatherData = await request.json();
   } catch (error) {
