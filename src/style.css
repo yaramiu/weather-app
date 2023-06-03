@@ -1,0 +1,24 @@
+:root {
+  --header-background-color: blue;
+}
+
+body {
+  margin: 0;
+}
+
+div.header {
+  background-color: var(--header-background-color);
+  height: 8rem;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+  column-gap: 0.75rem;
+}
+
+input[type="search"] {
+  width: 50rem;
+  height: 4rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  padding-left: 2rem;
+}

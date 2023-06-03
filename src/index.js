@@ -1,4 +1,4 @@
 import "./style.css";
-import { getWeatherData } from "./data";
+import { getUserInput } from "./input";
 
-getWeatherData("Toronto");
+getUserInput();
