@@ -1,4 +1,4 @@
 import "./style.css";
-import { getWeatherData } from "./api";
+import { getWeatherData } from "./data";
 
 getWeatherData("Toronto");
